@@ -22,7 +22,9 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 * Output of a test run
     ![](screenshots/test_run.png)
 * Project running on Azure App Service
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+    ![](screenshots/webapp1.png)
+    ![](screenshots/webapp2.png)
+* Successful deploy of the project in Azure Pipelines.  
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
