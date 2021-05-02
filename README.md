@@ -1,7 +1,7 @@
 # Building a CI/CD Pipeline
 [![CI](https://github.com/iDataist/Building-a-CI-CD-pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/iDataist/Building-a-CI-CD-pipeline/actions/workflows/main.yml)
 ## Overview
-Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is critical to enable high-quality customer service experiences in today’s digital world. In this project, I built a Continuous Delivery pipeline that deploys a Flask Machine Learning application using Azure Pipelines to Azure App Services. First, I used Github Actions to perform an initial install, lint, and test cycle on a machine learning application running in Flask in Azure App Services. Second, I integrated Continuous Delivery using Azure Pipelines to deploy tested application changes automatically to production. Lastly, I tested the prediction capability of the machine learning application deployed into production. 
+Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is critical to enable high-quality customer service experiences in today’s digital world. In this project, I built a CI/CD pipeline that deploys a Flask Machine Learning application with GitHub Actions, Azure Pipelines and Azure App Services. First, I leveraged GubHub actions to implement continuous integration that include install, lint and test steps. The code will always be checked automatically. Second, I used Azure pipeline for continuous delivery. Azure pipeline hooks right into Azure App Services and deployed my Flask application. Lastly, I tested the prediction capability of the machine learning application by giving it a JSON payload. 
 
 ## Project Plan
 
