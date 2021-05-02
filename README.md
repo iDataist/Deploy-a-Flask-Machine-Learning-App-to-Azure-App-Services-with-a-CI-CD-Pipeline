@@ -6,7 +6,7 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 ## Project Plan
 
 * [Trello board](https://trello.com/invite/b/991rrsp2/557a8a37842cf3151b22957d3173efb5/kanban-template)
-* [Spreadsheet]()
+* [Time Estimate](https://github.com/iDataist/Building-a-CI-CD-pipeline/blob/main/time_estimate.xlsx)
 
 ## Instructions
 * Review the architectural diagram of the project
@@ -22,19 +22,15 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 * Deploy the web app to Azure by running `az webapp up -g group20210501 -n webapp20210501 --sku F1`
     ![](screenshots/webapp1.png)
     ![](screenshots/webapp2.png)
+* Deploy the project with Azure Pipelines  
+    ![](screenshots/azure_pipeline1.png)
+* Run Azure App Service from Azure Pipelines automatic deployment
+    ![](screenshots/azure_pipeline2.png)
 * Load test the web app with locust
     ![](screenshots/locust.png)
 * Generate predictions from the deployed app by running `bash make_predict_azure_app.sh` 
     ![](screenshots/test_run2.png)
-* Deploy the project with Azure Pipelines  
-    ![](screenshots/azure_pipeline1.png)
-
-* Running Azure App Service from Azure Pipelines automatic deployment
-    ![](screenshots/azure_pipeline2.png)
-
-
 * Review streamed log files from the deployed app
-    ![](screenshots/deploy_log.png)
     ![](screenshots/log_stream.png)
 ## Enhancements
 Containerize the webapp and deploy it with AKS.
