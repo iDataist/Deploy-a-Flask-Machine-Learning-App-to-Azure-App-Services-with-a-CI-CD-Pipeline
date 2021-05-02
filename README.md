@@ -9,10 +9,7 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 * [Spreadsheet]()
 
 ## Instructions
-
-
 * Architectural Diagram
-
     ![](screenshots/architecture_diagram.png)
 
 * Project cloned into Azure Cloud Shell
@@ -20,33 +17,26 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
     ![](screenshots/make_all.png)
 * Output of a test run
-    ![](screenshots/test_run.png)
+    ![](screenshots/test_run1.png)
 * Project running on Azure App Service
     ![](screenshots/webapp1.png)
     ![](screenshots/webapp2.png)
-* Successful deploy of the project in Azure Pipelines.  
+    ![](screenshots/locust.png)
+* Successful deploy of the project in Azure Pipelines  
+    ![](screenshots/azure_pipeline1.png)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+    ![](screenshots/azure_pipeline2.png)
+* Successful prediction from deployed flask app
+    ![](screenshots/test_run2.png)
 
 * Output of streamed log files from deployed application
-
-
-
+    ![](screenshots/deploy_log.png)
+    ![](screenshots/log_stream.png)
 ## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
-
+Containerize the webapp and deploy it with AKS.
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+
 
 
