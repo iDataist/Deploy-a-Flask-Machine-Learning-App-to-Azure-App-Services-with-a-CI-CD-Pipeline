@@ -6,7 +6,7 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 ## Project Plan
 
 * [Trello board](https://trello.com/invite/b/991rrsp2/557a8a37842cf3151b22957d3173efb5/kanban-template)
-* [Project Plan]()
+* [Spreadsheet]()
 
 ## Instructions
 
@@ -18,11 +18,12 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 * Project cloned into Azure Cloud Shell
     ![](screenshots/cloud_shell.png)
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
-
+    ![](screenshots/make_all.png)
 * Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+    ![](screenshots/test_run.png)
 * Project running on Azure App Service
+* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+
 * Running Azure App Service from Azure Pipelines automatic deployment
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
@@ -36,7 +37,7 @@ Port: 443
 
 * Output of streamed log files from deployed application
 
-> 
+
 
 ## Enhancements
 
