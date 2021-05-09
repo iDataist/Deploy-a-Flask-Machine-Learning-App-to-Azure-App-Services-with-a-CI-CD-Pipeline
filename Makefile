@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
+	#hadolint Dockerfile
 	pylint --disable=R,C,W1203,W0702 app.py
 
 test:
