@@ -20,7 +20,7 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = "<h3>Sklearn Prediction Home</h3>"
+    html = "<h3>Credit Card Fraud Detection Home</h3>"
     return html.format(format)
 
 @app.route("/predict", methods=['POST'])
@@ -54,7 +54,7 @@ def predict():
     """
 
     try:
-        clf = joblib.load("boston_housing_prediction.joblib")
+        clf = joblib.load("model.joblib")
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
