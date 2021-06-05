@@ -22,7 +22,7 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
         ![](screenshots/azure_shell.png)
 2. Continuous Integration
     * Test and lint the code with Github Action 
-        ![](screenshots/github_action.png)
+        ![](screenshots/github_actions.png)
 3. Continous Delivery
     * Test the app locally by running `python app.py` and generate predictions by running `bash make_prediction.sh`
     ![](screenshots/test_run1.png)

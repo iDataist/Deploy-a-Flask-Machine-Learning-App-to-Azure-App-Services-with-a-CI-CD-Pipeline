@@ -1,26 +1,10 @@
-from flask import Flask, request, jsonify
-from flask.logging import create_logger
-import logging
+#!/usr/bin/env bash
 
-import pandas as pd
-import joblib
-from sklearn.preprocessing import StandardScaler
+PORT=5000
+echo "Port: $PORT"
 
-app = Flask(__name__)
-LOG = create_logger(app)
-LOG.setLevel(logging.INFO)
-
-@app.route("/")
-def home():
-    html = "<h3>Credit Card Fraud Detection Home</h3>"
-    return html.format(format)
-
-@app.route("/predict", methods=['POST'])
-def predict():
-    """Performs an sklearn prediction
-
-    input looks like:
-    {
+# POST method predict
+curl -d '{
     "Time": {
         "0": 0.8266309519613717
     },
@@ -111,26 +95,6 @@ def predict():
     "Amount": {
         "0": -0.29665339202123947
     }
-    }
-
-    result looks like:
-    { "prediction": [ 1 ] }
-
-    """
-
-    try:
-        clf = joblib.load("model.joblib")
-    except:
-        LOG.info("JSON payload: %s json_payload")
-        return "Model not loaded"
-
-    json_payload = request.json
-    LOG.info("JSON payload: %s json_payload")
-    inference_payload = pd.DataFrame(json_payload)
-    LOG.info("inference payload DataFrame: %s inference_payload")
-    prediction = list(clf.predict(inference_payload))
-    prediction = [int(x) for x in prediction]
-    return jsonify({'prediction': prediction})
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+}'\
+     -H "Content-Type: application/json" \
+     -X POST http://localhost:$PORT/predict
