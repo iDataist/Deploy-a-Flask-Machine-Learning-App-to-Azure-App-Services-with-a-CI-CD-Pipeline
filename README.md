@@ -18,11 +18,9 @@ Establishing a Continuous Integration/Continuous Delivery (CI/CD) pipeline is cr
 ## Key Steps
 
 1. Source Control
-    * Clone the project from GitHub and open the terminal (with azure-cli installed)
+    * Open the terminal (with git and azure-cli installed)
         ![](screenshots/azure_shell.png)
 2. Continuous Integration
-    * Test and lint the code locally by running the `make all` command from the `Makefile`
-        ![](screenshots/make_all.png)
     * Test and lint the code with Github Action 
         ![](screenshots/github_action.png)
 3. Continous Delivery
