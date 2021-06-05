@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 PORT=5000
 echo "Port: $PORT"
 
