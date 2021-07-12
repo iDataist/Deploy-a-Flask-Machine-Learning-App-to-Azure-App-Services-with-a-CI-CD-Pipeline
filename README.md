@@ -1,4 +1,4 @@
-# Building a CI/CD Pipeline
+# Deploying a Flask Machine Learning App to Azure App Services with a CI/CD Pipeline
 [![CI](https://github.com/iDataist/Building-a-CI-CD-pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/iDataist/Building-a-CI-CD-pipeline/actions/workflows/main.yml)
 
 ## Overview
